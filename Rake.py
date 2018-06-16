@@ -165,8 +165,7 @@ if test:
     rake = Rake("SmartStoplist.txt")
     keywords = rake.run(text)
     print keywords
-    print len(keywords)
-    with open('urfile.csv', 'wb') as out:
+    with open('keywords.csv', 'wb') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['name', 'weight'])
         for row in keywords:
